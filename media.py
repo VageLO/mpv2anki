@@ -16,7 +16,7 @@ class Media:
             self.__error(e)
 
     def __error(self, error):
-        sys.stdout.write(str({"error": error}))
+        sys.stdout.write(str(json.dumps({"error": error})))
         sys.exit(1)
 
     def __checkUrl(self):

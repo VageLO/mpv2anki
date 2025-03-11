@@ -35,6 +35,7 @@ def main():
 
 if __name__ == '__main__':
     result = main()
+    result = json.dumps(result)
 
     sys.stdout.write(str(result))
     sys.exit(0)
